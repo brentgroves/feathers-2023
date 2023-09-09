@@ -1,0 +1,100 @@
+// {
+//     // Use IntelliSense to learn about possible attributes.
+//     // Hover to view descriptions of existing attributes.
+//     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "type": "node",
+//             "request": "launch",
+//             "name": "Launch Program",
+//             "skipFiles": [
+//                 "<node_internals>/**"
+//             ],
+//             // "preLaunchTask": "npm: compile",
+//             // "program": "ts-node --esm src/index.ts",
+//             "program": "ts-node --esm /home/brent/src/feathers-2023/feathers-chat-ts/src/index.ts",
+//             // "program": "${workspaceFolder}/ts-node --esm /home/brent/src/feathers-2023/feathers-chat-ts/src/index.ts",
+//             "outFiles": [
+//                 "${workspaceFolder}/lib/**/*.js"
+//             ]
+//         }
+//     ]
+// }
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch Server",
+        "cwd": "${workspaceFolder}",
+        "runtimeArgs": [
+            "--loader",
+            "ts-node/esm",
+            "--experimental-specifier-resolution=node"
+        ],
+        "program": "${workspaceFolder}/src/index.ts"
+        }
+    ]
+}
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//       {
+//         "name": "Example",
+//         "type": "node",
+//         "request": "launch",
+//         // "preLaunchTask": "tsc: build - tsconfig.json",
+//         // "program": "${workspaceFolder}/src/app.ts",
+        
+//         "runtimeExecutable": "ts-node",
+//         "runtimeArgs": ["--esm"],
+//         "args": ["src/index.ts"],
+//         "cwd": "${workspaceRoot}",
+//         "internalConsoleOptions": "openOnSessionStart",
+//         "skipFiles": ["<node_internals>/**", "node_modules/**"]
+//         // "outFiles": [
+//         //     "${workspaceFolder}/lib/**/*.js"
+//         // ]
+//       }
+//     ]
+// }
+
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//       {
+//         "name": "Example",
+//         "type": "node",
+//         "request": "launch",
+//         "runtimeExecutable": "ts-node",
+//         "runtimeArgs": ["--esm"],
+//         "args": ["src/index.ts"],
+        
+//         "cwd": "${workspaceRoot}",
+//         "internalConsoleOptions": "openOnSessionStart",
+//         "skipFiles": ["<node_internals>/**", "node_modules/**"]
+//       }
+//     ]
+// }
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//       {
+//         "name": "Example",
+//         "type": "node",
+//         "request": "launch",
+//         "runtimeExecutable": "node",
+//         "runtimeArgs": ["--nolazy", "-r", "ts-node/register/transpile-only"],
+  
+//         "args": ["src/index.ts"],
+        
+//         "cwd": "${workspaceRoot}",
+//         "internalConsoleOptions": "openOnSessionStart",
+//         "skipFiles": ["<node_internals>/**", "node_modules/**"]
+//       }
+//     ]
+//   }
